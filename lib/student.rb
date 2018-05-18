@@ -15,7 +15,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    attributes_hash.each {|k, v| binding.pry self.send("#{k}=", v)}
+    attributes_hash.each {|k, v| self.send("#{k}=", v)}
     self
     # binding.pry
   end
